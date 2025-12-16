@@ -30,7 +30,9 @@ npm run build
 
 ## Deploy
 
-Just commit and push changes. GitHub actions will deploy them, see `.github/workflows/deploy-pages.yml`
+The site is deployed to Cloudflare pages.
+
+Just commit and push changes. This will trigger the Cloudflare build pipeline.
 
 ## Initial setup
 

@@ -65,13 +65,18 @@ html {
         height: 20px;
     }
 
+/* NAVBAR: fade on scroll. visibility makes the hidden navbar unclickable
+   and lets clicks reach the content beneath it. */
+
     .fade-out {
         opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
     }
 
     .fade-in {
         opacity: 1;
+        visibility: visible;
         transition: opacity 0.5s ease-in-out;
     }
 

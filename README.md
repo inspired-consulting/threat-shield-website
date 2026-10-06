@@ -13,7 +13,7 @@ Guidance for coding agents and a map of the repo is in [AGENTS.md](AGENTS.md).
 
 ## Prerequisites
 
-Node.js 20 or newer and npm.
+Node.js 22 or newer and npm (Vite 8 needs at least 20.19 or 22.12).
 
 ## How to run locally
 

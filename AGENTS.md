@@ -15,13 +15,13 @@ Owner: Inspired Consulting GmbH. Public repo, MIT license.
 
 | Concern    | Tool                                   |
 |------------|----------------------------------------|
-| Bundler    | Vite 7 (`vite.config.js`)              |
+| Bundler    | Vite 8 (`vite.config.mjs`)              |
 | Templating | `vite-plugin-handlebars` (partials only) |
 | CSS        | Tailwind CSS 3 + PostCSS + Autoprefixer |
 | JS         | Vanilla ES module, no dependencies     |
 | Hosting    | Cloudflare Pages, builds on push to `main` |
 
-Node 20+ works locally. There is no `.nvmrc`. There is no GitHub Actions workflow;
+Vite 8 requires Node 20.19+ or 22.12+. There is no `.nvmrc`. There is no GitHub Actions workflow;
 Cloudflare Pages runs `npm run build` itself on every push to `main`.
 
 ## Commands
@@ -39,7 +39,7 @@ Verify changes by running `npm run build` and by viewing the page with `npm star
 ## Layout
 
 ```
-src/                     Vite root (vite.config.js sets root to src/)
+src/                     Vite root (vite.config.mjs sets root to src/)
   index.html             Landing page (hero, benefits, how it works, offers, about, contact)
   documentation.html     Docs / knowledge page
   imprint.html           Legal: imprint
@@ -63,7 +63,7 @@ postcss.config.js        tailwindcss + autoprefixer
 ## How things fit together
 
 - **Adding a page**: create `src/<name>.html`, then register it in
-  `build.rollupOptions.input` in `vite.config.js`. Pages not listed there are not
+  `build.rollupOptions.input` in `vite.config.mjs`. Pages not listed there are not
   built. Add a link in `src/partials/footer.hbs` if it should be reachable.
 - **Partials**: use `{{> name }}` in HTML. Only `doc_head` and `footer` exist.
   There is no layout partial; each page repeats its own `<head>` and `<nav>`.

@@ -1,5 +1,6 @@
 import { resolve } from "path";
 import handlebars from "vite-plugin-handlebars";
+import tailwindcss from "@tailwindcss/vite";
 
 const root = resolve(import.meta.dirname, "src");
 
@@ -18,6 +19,7 @@ export default {
         },
     },
     plugins: [
+        tailwindcss(),
         handlebars({
             partialDirectory: resolve(root, "partials"),
         }),

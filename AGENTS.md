@@ -17,7 +17,7 @@ Owner: Inspired Consulting GmbH. Public repo, MIT license.
 |------------|----------------------------------------|
 | Bundler    | Vite 8 (`vite.config.mjs`)              |
 | Templating | `vite-plugin-handlebars` (partials only) |
-| CSS        | Tailwind CSS 3 + PostCSS + Autoprefixer |
+| CSS        | Tailwind CSS 4 via `@tailwindcss/vite` (no PostCSS config) |
 | JS         | Vanilla ES module, no dependencies     |
 | Hosting    | Cloudflare Pages, builds on push to `main` |
 
@@ -48,15 +48,13 @@ src/                     Vite root (vite.config.mjs sets root to src/)
   partials/
     doc_head.hbs         Favicon + webmanifest links, included in <head>
     footer.hbs           Shared footer with page links and copyright
-  css/main.css           Tailwind directives + custom component/animation CSS
+  css/main.css           Tailwind import, @theme brand colors, custom component/animation CSS
   js/main.js             Desktop navbar show/hide on scroll
   img/                   Images (webp, gif, png) and ts_icons/*.svg
   logos/                 ThreatShield and GitHub logos
   public/robots.txt      Copied as-is to dist root
   favicon*, site.webmanifest, android-chrome-*, apple-touch-icon.png
 dist/                    Build output, git-ignored
-tailwind.config.js       Brand colors (primary purple, secondary teal, custom gray)
-postcss.config.js        tailwindcss + autoprefixer
 .editorconfig            4 spaces, LF, UTF-8, max line 120
 ```
 
@@ -67,11 +65,17 @@ postcss.config.js        tailwindcss + autoprefixer
   built. Add a link in `src/partials/footer.hbs` if it should be reachable.
 - **Partials**: use `{{> name }}` in HTML. Only `doc_head` and `footer` exist.
   There is no layout partial; each page repeats its own `<head>` and `<nav>`.
-- **Tailwind content globs** are in `tailwind.config.js` (`./src/**/*.{js,html,hbs}`).
-  New file types with classes must be added there or their classes get purged.
-- **Brand colors**: use `primary-*`, `secondary-*`, `gray-*` from the Tailwind
-  config. Do not introduce raw hex values in HTML; a few inline gradient styles on
+- **Tailwind 4 is CSS-first**: there is no `tailwind.config.js`. Source files are
+  detected automatically (everything not git-ignored). Theme values live in the
+  `@theme` block at the top of `src/css/main.css`.
+- **Brand colors**: use `primary-*`, `secondary-*`, `gray-*` from the `@theme`
+  block. The default Tailwind gray scale is replaced; only `gray-100` to `gray-900`
+  exist. Do not introduce raw hex values in HTML; a few inline gradient styles on
   `<body>` and the navs are the existing exception.
+- **Tailwind 4 renames to remember**: `rounded-sm` is now `rounded-xs`, the old bare
+  `rounded` is now `rounded-sm`, `outline-none` is `outline-hidden`, opacity goes in
+  the color (`ring-primary-400/75`). Default border color is `currentColor`, so
+  always set a border color class. Buttons get `cursor: pointer` from a base rule.
 - **Custom CSS classes** are prefixed `ts-` (e.g. `ts-card-shadow`, `ts-external-link`,
   `ts-hover-trigger`). Follow that convention for new non-Tailwind classes.
 - **JavaScript**: `src/js/main.js` is loaded as a module on every page except

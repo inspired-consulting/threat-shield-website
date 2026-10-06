@@ -1,6 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Brand palette, formerly in tailwind.config.js */
+@theme {
+    --color-primary-100: #F8F6FB;
+    --color-primary-200: #E1D6F6;
+    --color-primary-300: #A583E5;
+    --color-primary-400: #8759DD;
+    --color-primary-500: #6930D4;
+    --color-primary-600: #5426AA;
+    --color-primary-700: #3F1D7F;
+    --color-primary-800: #2A1355;
+    --color-primary-900: #150A2A;
+
+    --color-secondary-50: #f1fcfb;
+    --color-secondary-100: #f1fcfb;
+    --color-secondary-200: #9df2eb;
+    --color-secondary-300: #64e4e0;
+    --color-secondary-400: #34cdcc;
+    --color-secondary-500: #1bb0b1;
+    --color-secondary-600: #138a8e;
+    --color-secondary-700: #146d71;
+    --color-secondary-800: #14575b;
+    --color-secondary-900: #16484b;
+    --color-secondary-950: #06292d;
+
+    /* Replace the default gray scale completely */
+    --color-gray-*: initial;
+    --color-gray-100: #FEFEFF;
+    --color-gray-200: #D7D8DF;
+    --color-gray-300: #C2C5D0;
+    --color-gray-400: #AEB1C0;
+    --color-gray-500: #9396A7;
+    --color-gray-600: #7E8291;
+    --color-gray-700: #5E606C;
+    --color-gray-800: #393B42;
+    --color-gray-900: #1A1B1F;
+}
+
+/* Tailwind v3 defaults that changed in v4: keep the old behaviour */
+@layer base {
+    button,
+    [role="button"] {
+        cursor: pointer;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -8,10 +51,10 @@ html {
 
 @layer components {
     .btn-primary {
-        @apply py-2 px-4 bg-primary-500 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-75;
+        @apply py-2 px-4 bg-primary-500 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 focus:outline-hidden focus:ring-2 focus:ring-primary-400/75;
     }
     .btn-secondary {
-        @apply py-2 px-4 bg-gray-200 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-75;
+        @apply py-2 px-4 bg-gray-200 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 focus:outline-hidden focus:ring-2 focus:ring-primary-400/75;
     }
 }
 

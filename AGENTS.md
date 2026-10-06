@@ -40,7 +40,7 @@ Verify changes by running `npm run build` and by viewing the page with `npm star
 
 ```
 src/                     Vite root (vite.config.mjs sets root to src/)
-  index.html             Landing page (hero, benefits, how it works, offers, about, contact)
+  index.html             Landing page (hero, what it does, features, run it yourself, demo, contribute, about)
   documentation.html     Docs / knowledge page
   imprint.html           Legal: imprint
   privacy.html           Legal: privacy policy

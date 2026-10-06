@@ -19,18 +19,6 @@
 <body class="xbg-primary-900 tracking-wide leading-160%"
     style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
 
-    <!-- BANNER -->
-    <div
-        class="bg-secondary-400 text-secondary-900 text-center font-semibold py-2 px-8 w-full flex items-center justify-center space-x-2 text-xs">
-        <span class="relative flex h-2 w-2 mr-2">
-            <span
-                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-700 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-700"></span>
-        </span>
-        Free interactive workshop for first requests!
-    </div>
-
-
     <!-- TOP NAVIGATION -->
 
     <!-- Mobile Navigation -->
@@ -50,12 +38,11 @@
         <div id="mobileMenuItems"
             class="hidden absolute top-full right-0 bg-primary-400 py-6 px-10 -mt-0.5 space-y-8 border-2 border-b-2 rounded-b-lg border-primary-400"
             style="background-image: linear-gradient(45deg, rgba(126,73,244,1.00) 2%, rgba(149,74,244,1.00) 50%); background-position: center center; background-size: cover;">
-            <a href="#preview-web-app" class="block text-gray-100" onclick="closeMobileMenu()">App preview</a>
-            <a href="#list-of-benefits" class="block text-gray-100" onclick="closeMobileMenu()">Your benefits</a>
-            <a href="#how-does-it-work" class="block text-gray-100" onclick="closeMobileMenu()">How it works</a>
-            <a href="#offers" class="block text-gray-100    " onclick="closeMobileMenu()">Offer</a>
+            <a href="#what-it-does" class="block text-gray-100" onclick="closeMobileMenu()">What it does</a>
+            <a href="#run-it-yourself" class="block text-gray-100" onclick="closeMobileMenu()">Run it yourself</a>
+            <a href="#demo" class="block text-gray-100" onclick="closeMobileMenu()">Demo</a>
+            <a href="#contribute" class="block text-gray-100" onclick="closeMobileMenu()">Contribute</a>
             <a href="#about" class="block text-gray-100" onclick="closeMobileMenu()">About</a>
-            <a href="#contact" class="block text-gray-100" onclick="closeMobileMenu()">Contact</a>
         </div>
     </nav>
 
@@ -72,22 +59,16 @@
 
         <!-- Navigation links -->
         <div id="menuItems" class="hidden lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:space-x-4">
-            <a href="#preview-web-app"
-                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">App
-                preview</a>
-            <a href="#list-of-benefits"
-                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Your
-                benefits</a>
-            <a href="#how-does-it-work"
-                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">How
-                it
-                works</a>
-            <a href="#offers"
-                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">Offer</a>
+            <a href="#what-it-does"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">What it does</a>
+            <a href="#run-it-yourself"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Run it yourself</a>
+            <a href="#demo"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Demo</a>
+            <a href="#contribute"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Contribute</a>
             <a href="#about"
-                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">About</a>
-            <a href="#contact"
-                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Contact</a>
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">About</a>
         </div>
     </nav>
 
@@ -138,25 +119,24 @@
             <div class="flex flex-col justify-center gap-8 w-full lg:w-1/2 my-10 xl:my-0 px-4">
                 <h1
                     class="text-4xl/tight lg:text-5xl/tight xl:text-6xl/tight w-full font-bold text-center lg:text-left">
-                    Protect your
+                    Identify threats to your
                     <span id="changing-word" class="text-primary-700 ts-hero-title">business</span>
-                    <span>from security threats</span>
                 </h1>
                 <p class="text-2xl/normal text-center lg:text-left">
-                    Identify and mitigate potential security threats with ThreatShield's threat modelling service</p>
-                <div class="flex justify-center lg:justify-start w-full">
-                    <a href="https://app.threatshield.eu/users/register" target="_blank"
-                        class="w-full sm:w-auto bg-secondary-400 text-center tracking-wider text-secondary-900 hover:text-secondary-950 py-4 px-6 rounded-sm hover:bg-secondary-500 active:bg-secondary-600 transition-all duration-300 hover:ease-in w-full lg:w-auto">
-                        <span class="font-medium">Join our beta</span>
+                    ThreatShield is an open-source, AI-assisted tool for threat modelling. Developed by Inspired
+                    Consulting and released under the MIT license. Build it, run it and host it yourself, free of
+                    charge.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 w-full">
+                    <a href="https://github.com/inspired-consulting/threat_shield" target="_blank"
+                        class="w-full sm:w-auto bg-secondary-400 text-center tracking-wider text-secondary-900 hover:text-secondary-950 py-4 px-6 rounded-sm hover:bg-secondary-500 active:bg-secondary-600 transition-all duration-300 hover:ease-in">
+                        <img src="./logos/github-mark.png" alt="" class="w-6 h-6 mr-2 inline-block align-text-bottom">
+                        <span class="font-medium">View on GitHub</span>
                     </a>
-                </div>
-                <div class="flex justify-center lg:justify-start">
-                    <span class="hover:text-primary-900">
-                        <img src="./logos/github-mark-white.png" alt="GitHub Logo" class="w-6 h-6 mx-1 inline-block">
-                        <a href="https://github.com/inspired-consulting/threat_shield" target="_blank"
-                            class="underline underline-offset-4 active:text-primary-100 hover:primary-300 transition-all duration-300 hover:ease-in">
-                            Fork us on GitHub</a>
-                    </span>
+                    <a href="#demo"
+                        class="w-full sm:w-auto text-center tracking-wider border-2 border-gray-100 text-gray-100 py-4 px-6 rounded-sm hover:bg-primary-700 transition-all duration-300 hover:ease-in">
+                        <span class="font-medium">Try the demo</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -164,19 +144,19 @@
 
     <main>
 
-        <!-- PREVIEW WEB APP -->
+        <!-- WHAT IT DOES -->
 
-        <section id="preview-web-app" class="bg-primary-800 flex justify-center py-10 scroll-mt-12">
+        <section id="what-it-does" class="bg-primary-800 flex justify-center py-10 scroll-mt-12">
             <div class="container text-primary-100 px-4 md:px-0 flex flex-col lg:flex-row justify-between gap-8">
                 <div class="w-full lg:w-1/2 flex flex-col gap-4 justify-center">
-                    <p class="text-center lg:text-left leading-normal text-gray-100 uppercase">Sneak Peek</p>
+                    <p class="text-center lg:text-left leading-normal text-gray-100 uppercase">What it does</p>
                     <hr class="border-t-2 border-secondary-500 w-32 lg:w-28 mx-auto lg:mx-0">
                     <h2 class="text-3xl/tight xl:text-4xl/tight w-full font-bold text-center lg:text-left">
-                        AI-driven threat modeling with intuitive design
+                        AI-assisted threat modelling for your systems
                     </h2>
                     <p class="text-xl leading-relaxed text-center lg:text-left">
-                        We use AI to provide concrete examples instead of abstract documentation.
-                        Our approach ensures easily accessible guidance and actionable recommendations.
+                        Describe your systems and assets, let the AI suggest concrete threats, assess the risks and
+                        plan mitigations. Concrete examples instead of abstract checklists.
                     </p>
                 </div>
                 <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
@@ -186,14 +166,14 @@
         </section>
 
 
-        <!-- LIST OF BENEFITS -->
+        <!-- FEATURES -->
 
-        <section id="list-of-benefits" class="w-full bg-gray-100">
+        <section id="features" class="w-full bg-gray-100">
             <div class="container mx-auto h-full py-20 pb-24 px-4 bg-gray-100">
-                <p class="text-center leading-normal text-primary-800 mb-4 uppercase">Your benefits</p>
+                <p class="text-center leading-normal text-primary-800 mb-4 uppercase">Features</p>
                 <hr class="border-t-2 border-secondary-300 w-40 mx-auto my-4">
                 <h2 class="text-3xl/tight xl:text-4xl/tight mb-8 font-bold text-center text-primary-800 pt-2">
-                    Stay one step ahead of potential threats
+                    From system description to mitigation plan
                 </h2>
 
                 <div class="flex flex-col lg:flex-row lg:justify-between pt-6">
@@ -203,17 +183,17 @@
                     <div
                         class="max-w-sm rounded-sm bg-gray-100 overflow-hidden mb-8 px-6 pb-6 mx-auto w-full border-2 border-secondary-300 lg:mx-0 lg:mb-0 lg:mr-6 ts-hover-trigger">
                         <div class="ts-hover-trigger">
-                            <img src="img/roboter.png" alt="Roboter Icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-                            <img src="img/roboter-2.gif" alt="Animated Icon"
+                            <img src="img/roboter.png" alt="Robot icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
+                            <img src="img/roboter-2.gif" alt="Animated robot icon"
                                 class="w-16 h-16 mx-auto my-4 ts-animated-icon">
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="font-bold text-xl/relaxed mb-2 text-primary-800 text-center">
-                                Simplified threat identification
+                                AI-assisted threat identification
                             </h3>
                             <p class="text-center text-gray-700 text-lg/relaxed">
-                                Effortlessly pinpoint threats to your IT systems and assets. Our AI assistant ensures a
-                                smooth start to your threat modelling journey.
+                                Describe a system and its assets. The AI assistant suggests concrete threats and
+                                gives you a quick start into threat modelling.
                             </p>
                         </div>
                     </div>
@@ -223,18 +203,17 @@
                     <div
                         class="max-w-sm rounded-sm bg-gray-100 overflow-hidden mb-8 px-6 pb-6 mx-auto w-full border-2 border-secondary-300 lg:mx-0 lg:mb-0 lg:mr-6 ts-hover-trigger">
                         <div class="ts-hover-trigger">
-                            <img src="img/shield.png" alt="Roboter Icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-                            <img src="img/shield.gif" alt="Animated Icon"
+                            <img src="img/shield.png" alt="Shield icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
+                            <img src="img/shield.gif" alt="Animated shield icon"
                                 class="w-16 h-16 mx-auto my-4 ts-animated-icon">
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="font-bold text-xl/relaxed mb-2 text-primary-800 text-center">
-                                Transparent risk & threat management
+                                Risk and mitigation management
                             </h3>
                             <p class="text-center text-gray-700 text-lg/relaxed">
-                                Clearly define and manage your security risks and their countermeasures, ensuring
-                                informed
-                                and strategic decision-making.
+                                Assess each threat, define countermeasures and track their status. Visualise risks
+                                and export the model to Excel.
                             </p>
                         </div>
                     </div>
@@ -244,16 +223,16 @@
                     <div
                         class="max-w-sm rounded-sm bg-gray-100 overflow-hidden mb-8 px-6 pb-6 mx-auto w-full border-2 border-secondary-300 lg:mx-0 lg:mb-0 lg:mr-6 ts-hover-trigger">
                         <div class="ts-hover-trigger">
-                            <img src="img/team.png" alt="Roboter Icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-                            <img src="img/team.gif" alt="Animated Icon" class="w-16 h-16 mx-auto my-4 ts-animated-icon">
+                            <img src="img/team.png" alt="Team icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
+                            <img src="img/team.gif" alt="Animated team icon" class="w-16 h-16 mx-auto my-4 ts-animated-icon">
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="font-bold text-xl/relaxed mb-2 text-primary-800 text-center">
-                                Collaboration & communication
+                                Collaboration across teams
                             </h3>
                             <p class="text-center text-gray-700 text-lg/relaxed">
-                                Enable effective collaboration across teams for proactive threat management, keeping all
-                                stakeholders aligned and informed.
+                                Multiple organisations and role-based access let security, development and
+                                operations work on the same threat model.
                             </p>
                         </div>
                     </div>
@@ -261,325 +240,167 @@
             </div>
         </section>
 
-        <!-- HOW DOES IT WORK -->
+        <!-- RUN IT YOURSELF -->
 
-        <section id="how-does-it-work" class="w-full bg-primary-200 py-10 scroll-mt-12">
-            <div class="container mx-auto px-4 flex flex-col gap-10">
+        <section id="run-it-yourself" class="w-full bg-primary-200 py-10 scroll-mt-12">
+            <div class="container mx-auto px-4 flex flex-col gap-10 max-w-4xl">
                 <div class="flex flex-col gap-4">
-                    <p class="text-center leading-normal text-primary-800 uppercase">How to ensure your security
-                    </p>
+                    <p class="text-center leading-normal text-primary-800 uppercase">Self-hosting</p>
                     <hr class="border-t-2 border-primary-300 w-72 mx-auto">
                     <h2 class="text-3xl/tight xl:text-4xl/tight font-bold text-center text-primary-800 mb-0 lg:mb-4">
-                        3 simple steps to start
+                        Run it yourself in three steps
                     </h2>
+                    <p class="text-center text-gray-700 text-lg/relaxed">
+                        ThreatShield is built with Elixir, Phoenix LiveView and PostgreSQL and ships with a Docker
+                        Compose setup. You need an OpenAI API key for the AI features.
+                    </p>
                 </div>
 
-                <!-- Step 1 -->
-
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="flex flex-col w-full md:w-1/2">
+                <div class="flex flex-col md:flex-row items-start gap-6 min-w-0">
+                    <div class="flex flex-col w-full min-w-0">
                         <div class="flex flex-col gap-3">
                             <div class="flex flex-col md:flex-row items-center gap-4">
-                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" style="max-width: 48px">
+                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="max-width: 48px" aria-hidden="true">
                                     <rect width="48" height="48" rx="8" fill="#5426AA" />
-                                    <path
-                                        d="M26.6374 14.5455V32H22.9471V18.0483H22.8448L18.8477 20.554V17.2812L23.1687 14.5455H26.6374Z"
-                                        fill="#F8F6FB" />
+                                    <path d="M26.6374 14.5455V32H22.9471V18.0483H22.8448L18.8477 20.554V17.2812L23.1687 14.5455H26.6374Z" fill="#F8F6FB" />
                                 </svg>
-                                <h3 class="font-bold text-xl/relaxed text-primary-800 text-left">
-                                    Initial consultation
-                                </h3>
+                                <h3 class="font-bold text-xl/relaxed text-primary-800 text-left">Clone the repository</h3>
                             </div>
-                            <p class="text-center md:text-left text-gray-700 text-lg/relaxed">
-                                Reach out for a preliminary discussion, followed by scheduling our specialized threat
-                                modelling workshop.
-                            </p>
+                            <pre class="bg-primary-900 text-gray-100 text-base/relaxed rounded-sm px-4 py-3 overflow-x-auto w-full max-w-full min-w-0"><code>git clone https://github.com/inspired-consulting/threat_shield.git</code></pre>
                         </div>
-                    </div>
-                    <div class="flex justify-end ts-img-shadow">
-                        <img src="./img/consultation.webp" alt="Two businessmen having a conversation in a meeting room"
-                            class="object-contain rounded-sm" style="max-height:306px">
                     </div>
                 </div>
 
-                <!-- Step 2 -->
-
-                <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
-                    <div class="flex justify-end">
-                        <img src="./img/workshop.webp"
-                            alt="A team in the office discussing during a threat modeling workshop"
-                            class="object-contain ts-img-shadow rounded-sm" style="max-height:306px">
-                    </div>
-                    <div class="flex flex-col items-center md:items-start gap-6 w-full md:w-1/2">
+                <div class="flex flex-col md:flex-row items-start gap-6 min-w-0">
+                    <div class="flex flex-col w-full min-w-0">
                         <div class="flex flex-col gap-3">
                             <div class="flex flex-col md:flex-row items-center gap-4">
-                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" style="max-width: 48px;">
+                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="max-width: 48px" aria-hidden="true">
                                     <rect width="48" height="48" rx="8" fill="#5426AA" />
-                                    <path
-                                        d="M17.3562 32V29.3409L23.5692 23.5881C24.0977 23.0767 24.5408 22.6165 24.8988 22.2074C25.2624 21.7983 25.538 21.3977 25.7255 21.0057C25.913 20.608 26.0067 20.179 26.0067 19.7188C26.0067 19.2074 25.8903 18.767 25.6573 18.3977C25.4244 18.0227 25.1062 17.7358 24.7028 17.5369C24.2994 17.3324 23.842 17.2301 23.3306 17.2301C22.7965 17.2301 22.3306 17.3381 21.9329 17.554C21.5352 17.7699 21.2283 18.0795 21.0124 18.483C20.7965 18.8864 20.6886 19.3665 20.6886 19.9233H17.1857C17.1857 18.7812 17.4442 17.7898 17.9613 16.9489C18.4783 16.108 19.2028 15.4574 20.1346 14.9972C21.0664 14.5369 22.1403 14.3068 23.3562 14.3068C24.6062 14.3068 25.6942 14.5284 26.6204 14.9716C27.5522 15.4091 28.2766 16.017 28.7937 16.7955C29.3107 17.5739 29.5692 18.4659 29.5692 19.4716C29.5692 20.1307 29.4386 20.7812 29.1772 21.4233C28.9215 22.0653 28.4641 22.7784 27.805 23.5625C27.146 24.3409 26.217 25.2756 25.0181 26.3665L22.4698 28.8636V28.983H29.7994V32H17.3562Z"
-                                        fill="#F8F6FB" />
+                                    <path d="M17.3562 32V29.3409L23.5692 23.5881C24.0977 23.0767 24.5408 22.6165 24.8988 22.2074C25.2624 21.7983 25.538 21.3977 25.7255 21.0057C25.913 20.608 26.0067 20.179 26.0067 19.7188C26.0067 19.2074 25.8903 18.767 25.6573 18.3977C25.4244 18.0227 25.1062 17.7358 24.7028 17.5369C24.2994 17.3324 23.842 17.2301 23.3306 17.2301C22.7965 17.2301 22.3306 17.3381 21.9329 17.554C21.5352 17.7699 21.2283 18.0795 21.0124 18.483C20.7965 18.8864 20.6886 19.3665 20.6886 19.9233H17.1857C17.1857 18.7812 17.4442 17.7898 17.9613 16.9489C18.4783 16.108 19.2028 15.4574 20.1346 14.9972C21.0664 14.5369 22.1403 14.3068 23.3562 14.3068C24.6062 14.3068 25.6942 14.5284 26.6204 14.9716C27.5522 15.4091 28.2766 16.017 28.7937 16.7955C29.3107 17.5739 29.5692 18.4659 29.5692 19.4716C29.5692 20.1307 29.4386 20.7812 29.1772 21.4233C28.9215 22.0653 28.4641 22.7784 27.805 23.5625C27.146 24.3409 26.217 25.2756 25.0181 26.3665L22.4698 28.8636V28.983H29.7994V32H17.3562Z" fill="#F8F6FB" />
                                 </svg>
-                                <h3 class="font-bold text-xl/relaxed text-primary-800 text-left">
-                                    Interactive workshop
-                                </h3>
+                                <h3 class="font-bold text-xl/relaxed text-primary-800 text-left">Configure</h3>
                             </div>
-                            <p class="text-center md:text-left text-gray-700 text-lg/relaxed">
-                                Participate in a 2-hour hands-on workshop using your system as a case study to create an
-                                initial threat model and learn how to effectively use ThreatShield.
-                            </p>
-                        </div>
-                        <div
-                            class="border border-2 border-gray-400 px-2 py-2 rounded-lg text-secondary-600 text-center">
-                            <span class="text-xs/relaxed font-semibold">Be quick: free of charge for first
-                                requests!</span>
+                            <p class="text-center md:text-left text-gray-700 text-lg/relaxed">Create a <code class="bg-primary-100 px-1 rounded-sm">.env</code> file with the PostgreSQL connection and your OpenAI API key. The README lists all variables.</p>
                         </div>
                     </div>
                 </div>
 
-
-                <!-- Step 3 -->
-
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="flex flex-col w-full md:w-1/2">
+                <div class="flex flex-col md:flex-row items-start gap-6 min-w-0">
+                    <div class="flex flex-col w-full min-w-0">
                         <div class="flex flex-col gap-3">
-                            <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
-                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" style="max-width: 48px;">
+                            <div class="flex flex-col md:flex-row items-center gap-4">
+                                <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="max-width: 48px" aria-hidden="true">
                                     <rect width="48" height="48" rx="8" fill="#5426AA" />
-                                    <path
-                                        d="M23.4563 32.2386C22.1836 32.2386 21.0501 32.0199 20.0558 31.5824C19.0671 31.1392 18.2859 30.5312 17.712 29.7585C17.1438 28.9801 16.8512 28.0824 16.8342 27.0653H20.5501C20.5728 27.4915 20.712 27.8665 20.9677 28.1903C21.229 28.5085 21.5756 28.7557 22.0075 28.9318C22.4393 29.108 22.9251 29.196 23.4648 29.196C24.0273 29.196 24.5245 29.0966 24.9563 28.8977C25.3881 28.6989 25.7262 28.4233 25.9705 28.071C26.2148 27.7187 26.337 27.3125 26.337 26.8523C26.337 26.3864 26.2063 25.9744 25.945 25.6165C25.6893 25.2528 25.32 24.9687 24.837 24.7642C24.3597 24.5597 23.7915 24.4574 23.1325 24.4574H21.5046V21.7472H23.1325C23.6893 21.7472 24.1808 21.6506 24.6069 21.4574C25.0387 21.2642 25.3739 20.9972 25.6126 20.6562C25.8512 20.3097 25.9705 19.9062 25.9705 19.446C25.9705 19.0085 25.8654 18.625 25.6552 18.2955C25.4506 17.9602 25.1609 17.6989 24.7859 17.5114C24.4165 17.3239 23.9847 17.2301 23.4904 17.2301C22.9904 17.2301 22.533 17.321 22.1183 17.5028C21.7035 17.679 21.3711 17.9318 21.1211 18.2614C20.8711 18.5909 20.7376 18.9773 20.7205 19.4205H17.1836C17.2006 18.4148 17.4876 17.5284 18.0444 16.7614C18.6012 15.9943 19.3512 15.3949 20.2944 14.9631C21.2433 14.5256 22.3143 14.3068 23.5075 14.3068C24.712 14.3068 25.766 14.5256 26.6694 14.9631C27.5728 15.4006 28.2745 15.9915 28.7745 16.7358C29.2802 17.4744 29.5302 18.304 29.5245 19.2244C29.5302 20.2017 29.2262 21.017 28.6126 21.6705C28.0046 22.3239 27.212 22.7386 26.2347 22.9148V23.0511C27.5188 23.2159 28.4961 23.6619 29.1665 24.3892C29.8427 25.1108 30.1779 26.0142 30.1722 27.0994C30.1779 28.0938 29.891 28.9773 29.3114 29.75C28.7376 30.5227 27.945 31.1307 26.9336 31.5739C25.9222 32.017 24.7631 32.2386 23.4563 32.2386Z"
-                                        fill="#F8F6FB" />
+                                    <path d="M23.4563 32.2386C22.1836 32.2386 21.0501 32.0199 20.0558 31.5824C19.0671 31.1392 18.2859 30.5312 17.712 29.7585C17.1438 28.9801 16.8512 28.0824 16.8342 27.0653H20.5501C20.5728 27.4915 20.712 27.8665 20.9677 28.1903C21.229 28.5085 21.5756 28.7557 22.0075 28.9318C22.4393 29.108 22.9251 29.196 23.4648 29.196C24.0273 29.196 24.5245 29.0966 24.9563 28.8977C25.3881 28.6989 25.7262 28.4233 25.9705 28.071C26.2148 27.7187 26.337 27.3125 26.337 26.8523C26.337 26.3864 26.2063 25.9744 25.945 25.6165C25.6893 25.2528 25.32 24.9687 24.837 24.7642C24.3597 24.5597 23.7915 24.4574 23.1325 24.4574H21.5046V21.7472H23.1325C23.6893 21.7472 24.1808 21.6506 24.6069 21.4574C25.0387 21.2642 25.3739 20.9972 25.6126 20.6562C25.8512 20.3097 25.9705 19.9062 25.9705 19.446C25.9705 19.0085 25.8654 18.625 25.6552 18.2955C25.4506 17.9602 25.1609 17.6989 24.7859 17.5114C24.4165 17.3239 23.9847 17.2301 23.4904 17.2301C22.9904 17.2301 22.533 17.321 22.1183 17.5028C21.7035 17.679 21.3711 17.9318 21.1211 18.2614C20.8711 18.5909 20.7376 18.9773 20.7205 19.4205H17.1836C17.2006 18.4148 17.4876 17.5284 18.0444 16.7614C18.6012 15.9943 19.3512 15.3949 20.2944 14.9631C21.2433 14.5256 22.3143 14.3068 23.5075 14.3068C24.712 14.3068 25.766 14.5256 26.6694 14.9631C27.5728 15.4006 28.2745 15.9915 28.7745 16.7358C29.2802 17.4744 29.5302 18.304 29.5245 19.2244C29.5302 20.2017 29.2262 21.017 28.6126 21.6705C28.0046 22.3239 27.212 22.7386 26.2347 22.9148V23.0511C27.5188 23.2159 28.4961 23.6619 29.1665 24.3892C29.8427 25.1108 30.1779 26.0142 30.1722 27.0994C30.1779 28.0938 29.891 28.9773 29.3114 29.75C28.7376 30.5227 27.945 31.1307 26.9336 31.5739C25.9222 32.017 24.7631 32.2386 23.4563 32.2386Z" fill="#F8F6FB" />
                                 </svg>
-                                <h3 class="font-bold text-xl/relaxed text-primary-800 text-left">
-                                    Run ThreatShield yourself
-                                </h3>
+                                <h3 class="font-bold text-xl/relaxed text-primary-800 text-left">Start</h3>
                             </div>
-                            <p class="text-center md:text-left text-gray-700 text-lg/relaxed">
-                                Easily set up ThreatShield on your own infrastructure and integrate it into your daily
-                                operations, empowering your team to manage threats autonomously.
-                            </p>
+                            <pre class="bg-primary-900 text-gray-100 text-base/relaxed rounded-sm px-4 py-3 overflow-x-auto w-full max-w-full min-w-0"><code>docker compose up --build</code></pre><p class="text-center md:text-left text-gray-700 text-lg/relaxed">Open <code class="bg-primary-100 px-1 rounded-sm">http://localhost:4000</code> and create your first organisation.</p>
                         </div>
-                    </div>
-                    <div class="flex justify-end w-full md:w-1/2">
-                        <img src="./img/mockup-system.webp" alt="Application interface displayed on a computer screen"
-                            class="object-contain sm:max-w-xl w-full" style="max-height:306px">
                     </div>
                 </div>
 
                 <div class="flex justify-center w-full">
-                    <a href="https://app.threatshield.eu/users/register" target="_blank"
+                    <a href="https://github.com/inspired-consulting/threat_shield#readme" target="_blank"
                         class="w-full sm:w-auto bg-primary-500 text-white text-center py-3 px-4 rounded-sm hover:bg-primary-700 active:bg-primary-500 transition-all duration-300 hover:ease-in">
-                        Join our beta
+                        Read the setup guide
                     </a>
-                </div>
-        </section>
-
-
-        <!-- OFFERS -->
-
-        <section id="offers" class="w-full bg-gray-100">
-            <div class="container flex flex-col gap-10 bg-gray-100 mx-auto py-12 px-4">
-                <div class="flex flex-col justify-center gap-4">
-                    <p class="text-center leading-normal text-primary-800 uppercase">Offer</p>
-                    <hr class="border-t-2 border-secondary-300 w-40 mx-auto">
-                    <h2 class="text-3xl/tight xl:text-4xl/tight font-bold text-center text-primary-800">
-                        Our offer to you
-                    </h2>
-                </div>
-                <div class="flex flex-col items-center lg:items-stretch lg:flex-row lg:justify-between gap-10">
-        
-                    <!-- CARD 1 -->
-        
-                    <div class="max-w-sm rounded-sm overflow-hidden ts-card-shadow w-full" style="min-height: 434.5px;">
-                        <div class="p-6 flex flex-col justify-between gap-6 h-full">
-                            <div>
-                                <p class="font-bold text-xl/relaxed text-primary-800 text-center">
-                                    Engage with us and ask questions about ThreatShield
-                                </p>
-                                <hr class="border-t-2 border-gray-200 mx-auto mt-4">
-                            </div>
-                            <ul class="list-none text-primary-900 text-lg/relaxed flex flex-col gap-4">
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Collaborate with us to tailor ThreatShield according
-                                        to your needs</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Feedback matters: share your valuable feedback -
-                                        your thoughts shape our journey</span>
-                                </li>
-                            </ul>
-                            <a href="https://app.threatshield.eu/users/register" target="_blank"
-                                class="w-full py-3 bg-primary-500 text-white text-center rounded-sm hover:bg-primary-700 active:bg-primary-500 transition-all duration-300 hover:ease-in">
-                                Let's get started</a>
-                        </div>
-                    </div>
-        
-                    <!-- CARD 2 -->
-        
-                    <div class="max-w-sm rounded-sm overflow-hidden ts-card-shadow w-full flex flex-col">
-                        <div class="p-6 flex flex-col justify-between gap-6 h-full">
-                            <div>
-                                <p class="font-bold text-xl/relaxed text-primary-800 text-center">
-                                    More control: Discover our open source self-hosting solution
-                                </p>
-                                <hr class="border-t-2 border-gray-200 mx-auto mt-4">
-                            </div>
-                            <ul class="list-none text-primary-900 text-lg/relaxed flex flex-col gap-4">
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Explore our open-source self-hosting solution</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Access the GitHub repository for our software</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Discover the convenience of Docker images</span>
-                                </li>
-                            </ul>
-                            <a href="https://app.threatshield.eu/users/register" target="_blank"
-                                class="w-full py-3 bg-primary-500 text-white text-center rounded-sm hover:bg-primary-700 active:bg-primary-500 transition-all duration-300 hover:ease-in">
-                                Let's get started</a>
-                        </div>
-                    </div>
-        
-                    <!-- CARD 3 -->
-        
-                    <div class="max-w-sm rounded-sm overflow-hidden ts-card-shadow w-full flex flex-col">
-                        <div class="p-6 flex flex-col justify-between gap-6 h-full">
-                            <div>
-                                <p class="font-bold text-xl/relaxed text-primary-800 text-center">
-                                    Strengthen your defenses: <br />
-                                    Threat modelling workshops
-                                </p>
-                                <hr class="border-t-2 border-gray-200 mx-auto mt-4">
-                            </div>
-                            <ul class="list-none text-primary-900 text-lg/relaxed flex flex-col gap-4">
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Discover cybersecurity through hands-on
-                                        workshops</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Identify and mitigate security threats</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="icon-container">
-                                        <svg class="w-8 h-6 mr-3 text-secondary-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-gray-700">Equip yourself to safeguard digital assets</span>
-                                </li>
-                            </ul>
-                            <a href="https://app.threatshield.eu/users/register" target="_blank"
-                                class="w-full py-3 bg-primary-500 text-white text-center rounded-sm hover:bg-primary-700 active:bg-primary-500 transition-all duration-300 hover:ease-in">
-                                Let's get started</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        
 
-        <!-- ABOUT US -->
 
-        <section id="about" class="w-full bg-primary-200 flex flex-col pt-1 items-center lg:flex-row">
+        <!-- DEMO -->
+
+        <section id="demo" class="w-full bg-gray-100 scroll-mt-12">
+            <div class="container flex flex-col gap-8 bg-gray-100 mx-auto py-12 px-4 max-w-4xl">
+                <div class="flex flex-col justify-center gap-4">
+                    <p class="text-center leading-normal text-primary-800 uppercase">Demo instance</p>
+                    <hr class="border-t-2 border-secondary-300 w-40 mx-auto">
+                    <h2 class="text-3xl/tight xl:text-4xl/tight font-bold text-center text-primary-800">
+                        Try it without installing anything
+                    </h2>
+                    <p class="text-center text-gray-700 text-lg/relaxed">
+                        We run a hosted instance at app.threatshield.eu for demonstration, testing and evaluation.
+                        It is free of charge and comes without any service guarantees.
+                    </p>
+                </div>
+                <div class="border-2 border-secondary-500 bg-secondary-50 rounded-sm px-6 py-5 text-primary-900 text-lg/relaxed">
+                    <p class="font-bold mb-2">Not for production data</p>
+                    <ul class="list-disc pl-5 flex flex-col gap-1">
+                        <li>Threat models are confidential information. Do not enter real system details or anything
+                            you would not share publicly.</li>
+                        <li>Data on the demo instance may be reset or deleted at any time and is not backed up.</li>
+                        <li>For real threat models, run your own instance. See
+                            <a href="#run-it-yourself" class="underline underline-offset-4 font-semibold">Run it yourself</a>.</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+                    <a href="https://app.threatshield.eu/users/register" target="_blank"
+                        class="w-full sm:w-auto bg-primary-500 text-white text-center py-3 px-6 rounded-sm hover:bg-primary-700 active:bg-primary-500 transition-all duration-300 hover:ease-in">
+                        Open the demo instance
+                    </a>
+                    <a href="/terms.html" class="text-primary-600 hover:text-primary-500 underline underline-offset-4">Terms of service</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTRIBUTE -->
+
+        <section id="contribute" class="bg-primary-800 py-12 scroll-mt-12">
+            <div class="container mx-auto px-4 max-w-4xl flex flex-col gap-4 text-center text-gray-100">
+                <p class="uppercase leading-normal">Open source</p>
+                <hr class="border-t-2 border-secondary-500 mx-auto w-40">
+                <h2 class="text-3xl/tight xl:text-4xl/tight font-bold">Contributions welcome</h2>
+                <p class="text-xl/relaxed">
+                    ThreatShield is released under the MIT license. Bug reports, feature ideas and pull requests are
+                    welcome. A good place to start are the open issues on GitHub.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 w-full mt-4">
+                    <a href="https://github.com/inspired-consulting/threat_shield/issues" target="_blank"
+                        class="w-full sm:w-auto bg-secondary-400 text-secondary-900 hover:text-secondary-950 text-center tracking-wider py-4 px-6 rounded-sm hover:bg-secondary-500 active:bg-secondary-600 transition-all duration-300 hover:ease-in">
+                        Open issues
+                    </a>
+                    <a href="https://github.com/inspired-consulting/threat_shield" target="_blank"
+                        class="w-full sm:w-auto text-center tracking-wider border-2 border-gray-100 py-4 px-6 rounded-sm hover:bg-primary-700 transition-all duration-300 hover:ease-in">
+                        <img src="./logos/github-mark-white.png" alt="" class="w-6 h-6 mr-2 inline-block align-text-bottom">Repository
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about" class="w-full bg-primary-200 flex flex-col pt-1 items-center lg:flex-row scroll-mt-12">
             <div class="container flex flex-row justify-center mx-auto">
                 <div class="mx-auto px-4 w-full lg:px-8 flex flex-col justify-center text-center lg:text-left">
                     <div>
-                        <p class="text-center lg:text-left text-primary-800 leading-normal px-2 uppercase">About us
-                        </p>
+                        <p class="text-center lg:text-left text-primary-800 leading-normal px-2 uppercase">About</p>
                         <hr class="border-t-2 border-primary-500 w-24 mx-auto my-4 lg:mx-0">
                     </div>
                     <h2 class="text-3xl/tight xl:text-4xl/tight text-primary-800 pt-2 font-bold">
-                        The team
+                        Built by Inspired Consulting
                     </h2>
-                    <p class="text-xl/relaxed leading-relaxed text-primary-800 mb-6 mt-2">Discover the team behind
-                        ThreatShield.</p>
+                    <p class="text-xl/relaxed leading-relaxed text-primary-800 mb-6 mt-2">
+                        ThreatShield was developed by Inspired Consulting, a software and IT security consultancy in
+                        Cologne, Germany. Questions that do not fit into a GitHub issue? Write to
+                        <a href="mailto:threatshield@inspired.consulting" class="underline underline-offset-4 font-semibold">threatshield@inspired.consulting</a>.
+                    </p>
                     <div>
-                        <a href="https://inspired.consulting/en/about" target="_blank"
+                        <a href="https://inspired.consulting" target="_blank"
                             class="block md:inline-block bg-primary-500 ts-external-link text-white tracking-wider py-4 px-6 rounded-sm hover:bg-primary-700 active:bg-primary-500 transition-all duration-300 ease-in">
-                            <span class="text-center">Our team</span>
+                            <span class="text-center">inspired.consulting</span>
                         </a>
                     </div>
                 </div>
                 <div class="lg:w-1/2 h-96 bg-contain bg-no-repeat"
                     style="background-image: url('./img/shiba-ponting-left.webp');">
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT US -->
-
-        <section id="contact" class="bg-gray-100 py-10">
-            <div class="container mx-auto">
-                <div class="flex flex-col gap-4 text-center px-4 md:px-0">
-                    <p class="text-primary-800 uppercase leading-normal">Ready to protect your business?</p>
-                    <hr class="border-t-2 border-secondary-400 mx-auto w-80">
-                    <h2 class="text-3xl/tight xl:text-4xl/tight font-bold text-primary-800 leading-normal">
-                        Feel free to reach out
-                    </h2>
-                    <p class="text-xl/relaxed leading-relaxed text-primary-800">We'd love to hear from you.</p>
-                    <div class="flex justify-center">
-                        <img src="img/chatbot2.gif" alt="Animated icon" class="w-16 h-16 lg:w-20 lg:h-20">
-                    </div>
-                    <div class="flex justify-center w-full">
-                        <a href="mailto:threatshield@inspired.consulting"
-                            class="w-full sm:w-auto bg-primary-500 text-white tracking-wider py-4 px-6 rounded-sm hover:bg-primary-700 active:bg-primary-500 transition-all duration-300 hover:ease-in">
-                            <span>Send us an e-mail</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -592,7 +413,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var words = [
-                "IT-Systems",
+                "IT systems",
                 "assets",
                 "data",
                 "business"

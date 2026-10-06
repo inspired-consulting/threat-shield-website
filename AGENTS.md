@@ -52,7 +52,7 @@ src/                     Vite root (vite.config.mjs sets root to src/)
   js/main.js             Desktop navbar show/hide on scroll
   img/                   Images (webp, gif, png) and ts_icons/*.svg
   logos/                 ThreatShield and GitHub logos
-  public/robots.txt      Copied as-is to dist root
+  public/                robots.txt and llms.txt, copied as-is to dist root
   favicon*, site.webmanifest, android-chrome-*, apple-touch-icon.png
 dist/                    Build output, git-ignored
 .editorconfig            4 spaces, LF, UTF-8, max line 120
@@ -92,8 +92,11 @@ dist/                    Build output, git-ignored
   in comments, but all user-facing text must be English.
 - Commit messages: short imperative sentence, no prefix convention.
 - Work on a feature branch and open a PR to `main`. Pushing to `main` deploys.
-- Keep images optimized (webp preferred). The repo already carries large GIFs;
-  do not add more without compressing.
+- Keep images optimized: webp, sized close to the largest rendered size (2x for
+  retina), `width`/`height` attributes set, `loading="lazy"` below the fold. Animated
+  icons are animated webp, not GIF. No spaces in image file names; they break `srcset`.
+- `src/public/llms.txt` summarizes the project for AI crawlers. Update it when the
+  positioning, links or legal pages change.
 
 ## Things to know before changing anything
 

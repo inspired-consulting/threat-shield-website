@@ -1,0 +1,28 @@
+# ThreatShield
+
+> ThreatShield is an open-source, AI-assisted web application for threat modelling. You describe your IT systems and assets, the AI assistant suggests concrete threats, and you assess risks and plan mitigations. Developed by Inspired Consulting GmbH (Cologne, Germany) and released under the MIT license. Free to build, run and host yourself.
+
+Key facts:
+
+- License: MIT
+- Stack: Elixir, Phoenix LiveView, PostgreSQL, Docker Compose
+- Requires an OpenAI API key for the AI features
+- Features: guided threat-modelling workflow, risk assessment and mitigation tracking, multi-tenant with role-based access, Excel export
+- A hosted instance at https://app.threatshield.eu exists for demonstration and evaluation only. Threat models are confidential; do not enter real system details or production data there. Data may be reset at any time.
+
+## Source and documentation
+
+- [GitHub repository](https://github.com/inspired-consulting/threat_shield): source code, README with setup instructions, issues and pull requests
+- [Documentation page](https://threatshield.eu/documentation.html): introduction to threat modelling and the STRIDE method
+- [Website](https://threatshield.eu/): project overview, self-hosting quick start, demo instance
+
+## Legal
+
+- [Terms of service](https://threatshield.eu/terms.html)
+- [Privacy policy](https://threatshield.eu/privacy.html)
+- [Imprint](https://threatshield.eu/imprint.html)
+
+## Contact
+
+- Email: threatshield@inspired.consulting
+- Company: https://inspired.consulting

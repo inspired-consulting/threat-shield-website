@@ -109,12 +109,13 @@
             style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
         </div>
         <div class="relative z-10 lg:mx-0 flex flex-col lg:flex-row">
-            <div class="hidden lg:flex justify-center items-center w-full lg:w-1/2 h-60vmin bg-cover">
-                <img src="./img/shiba-hero-freigestellt-2.1 Kopie2.webp" alt="Hero image"
-                    class="w-full h-full object-cover overflow-visible" style="max-width: 70%;">
-            </div>
-            <div class="lg:hidden">
-                <img src="./img/shiba-hero3.webp" alt="Hero image" class="w-full h-full object-cover">
+            <div class="flex justify-center items-center w-full lg:w-1/2">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./img/shiba-hero-desktop.webp"
+                        width="684" height="800">
+                    <img src="./img/shiba-hero-mobile.webp" alt="Hero image" width="1024" height="819"
+                        fetchpriority="high" class="w-full h-auto object-cover lg:max-w-[70%]">
+                </picture>
             </div>
             <div class="flex flex-col justify-center gap-8 w-full lg:w-1/2 my-10 xl:my-0 px-4">
                 <h1
@@ -160,7 +161,8 @@
                     </p>
                 </div>
                 <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                    <img src="./img/preview-systems.webp" alt="Preview image of the app interface" class="max-h-full ts-img-shadow">
+                    <img src="./img/preview-systems.webp" alt="Preview image of the app interface" width="1300" height="755"
+                        loading="lazy" class="max-h-full h-auto ts-img-shadow">
                 </div>
             </div>
         </section>
@@ -183,8 +185,8 @@
                     <div
                         class="max-w-sm rounded-sm bg-gray-100 overflow-hidden mb-8 px-6 pb-6 mx-auto w-full border-2 border-secondary-300 lg:mx-0 lg:mb-0 lg:mr-6 ts-hover-trigger">
                         <div class="ts-hover-trigger">
-                            <img src="img/roboter.png" alt="Robot icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-                            <img src="img/roboter-2.gif" alt="Animated robot icon"
+                            <img src="img/roboter.png" alt="Robot icon" width="128" height="128" loading="lazy" class="w-12 h-12 mx-auto my-6 ts-static-icon">
+                            <img src="img/roboter-2.webp" alt="Animated robot icon" width="128" height="128" loading="lazy"
                                 class="w-16 h-16 mx-auto my-4 ts-animated-icon">
                         </div>
                         <div class="flex flex-col items-center">
@@ -203,8 +205,8 @@
                     <div
                         class="max-w-sm rounded-sm bg-gray-100 overflow-hidden mb-8 px-6 pb-6 mx-auto w-full border-2 border-secondary-300 lg:mx-0 lg:mb-0 lg:mr-6 ts-hover-trigger">
                         <div class="ts-hover-trigger">
-                            <img src="img/shield.png" alt="Shield icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-                            <img src="img/shield.gif" alt="Animated shield icon"
+                            <img src="img/shield.png" alt="Shield icon" width="128" height="128" loading="lazy" class="w-12 h-12 mx-auto my-6 ts-static-icon">
+                            <img src="img/shield.webp" alt="Animated shield icon" width="128" height="128" loading="lazy"
                                 class="w-16 h-16 mx-auto my-4 ts-animated-icon">
                         </div>
                         <div class="flex flex-col items-center">
@@ -223,8 +225,8 @@
                     <div
                         class="max-w-sm rounded-sm bg-gray-100 overflow-hidden mb-8 px-6 pb-6 mx-auto w-full border-2 border-secondary-300 lg:mx-0 lg:mb-0 lg:mr-6 ts-hover-trigger">
                         <div class="ts-hover-trigger">
-                            <img src="img/team.png" alt="Team icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-                            <img src="img/team.gif" alt="Animated team icon" class="w-16 h-16 mx-auto my-4 ts-animated-icon">
+                            <img src="img/team.png" alt="Team icon" width="128" height="128" loading="lazy" class="w-12 h-12 mx-auto my-6 ts-static-icon">
+                            <img src="img/team.webp" alt="Animated team icon" width="128" height="128" loading="lazy" class="w-16 h-16 mx-auto my-4 ts-animated-icon">
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="font-bold text-xl/relaxed mb-2 text-primary-800 text-center">
@@ -368,7 +370,7 @@
                     </a>
                     <a href="https://github.com/inspired-consulting/threat_shield" target="_blank"
                         class="w-full sm:w-auto text-center tracking-wider border-2 border-gray-100 py-4 px-6 rounded-sm hover:bg-primary-700 transition-all duration-300 hover:ease-in">
-                        <img src="./logos/github-mark-white.png" alt="" class="w-6 h-6 mr-2 inline-block align-text-bottom">Repository
+                        <img src="./logos/github-mark-white.png" alt="" width="230" height="225" loading="lazy" class="w-6 h-6 mr-2 inline-block align-text-bottom">Repository
                     </a>
                 </div>
             </div>

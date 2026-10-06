@@ -129,6 +129,6 @@ html {
 /* DOCUMENT - List item marker */
 
 .ts-list-marker::marker {
-    color: #4F46E5;
+    color: #6930D4; /* primary-500 */
     font-size: 1.5rem;
 }

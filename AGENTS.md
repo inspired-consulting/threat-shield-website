@@ -21,9 +21,8 @@ Owner: Inspired Consulting GmbH. Public repo, MIT license.
 | JS         | Vanilla ES module, no dependencies     |
 | Hosting    | Cloudflare Pages, builds on push to `main` |
 
-Node 23+ works locally. There is no `.nvmrc`; `.github/workflows/deploy-pages.yml`
-pins Node 25 but that workflow is a leftover from GitHub Pages and is **not** the
-live deploy path (see README).
+Node 20+ works locally. There is no `.nvmrc`. There is no GitHub Actions workflow;
+Cloudflare Pages runs `npm run build` itself on every push to `main`.
 
 ## Commands
 
@@ -76,7 +75,7 @@ postcss.config.js        tailwindcss + autoprefixer
 - **Custom CSS classes** are prefixed `ts-` (e.g. `ts-card-shadow`, `ts-external-link`,
   `ts-hover-trigger`). Follow that convention for new non-Tailwind classes.
 - **JavaScript**: `src/js/main.js` is loaded as a module on every page except
-  `documentation.html`. It assumes `#navbar` exists. `index.html` also contains
+  `documentation.html`. `index.html` also contains
   two inline `<script>` blocks: mobile menu toggle and the rotating hero word
   effect (`#changing-word`, `.letter` classes in `main.css`).
 - **Asset references** in HTML use relative paths (`./img/...`, `./logos/...`).
@@ -94,14 +93,9 @@ postcss.config.js        tailwindcss + autoprefixer
 
 ## Things to know before changing anything
 
-- `src/img/ThreatShield.html` and `src/img/ThreatShield_files/` are a saved
-  browser snapshot of the site. They are not used by the build. Do not reference
-  them. They are candidates for deletion, but ask before removing.
-- `risk-board.mockup Kopie.webp` in the repo root is unused by the build.
-- `.github/workflows/deploy-pages.yml` targets GitHub Pages and is stale.
-  Cloudflare Pages runs `npm run build` itself.
-- `#navbar` show/hide logic only activates when `window.innerWidth > 1023`.
-  The mobile nav (`#mobileNav`) is a separate element.
+- `#navbar` show/hide logic in `main.js` only activates when a `#navbar` element
+  exists and `window.innerWidth > 1023`. The mobile nav (`#mobileNav`) is a
+  separate element. Legal pages and `documentation.html` have no navbar.
 - The footer copyright year is hard-coded in `footer.hbs`.
 - There are no tests, so a successful `npm run build` plus a visual check in the
   dev server is the acceptance bar.

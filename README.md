@@ -1,12 +1,19 @@
 # ThreatShield-Website
 
-This is a companion site for ThreatShield App.
+This is the companion site for the ThreatShield app.
 
 Visit the [website](https://threatshield.eu/).
 
 # Development
 
-This site is build using TailwindCSS, Handlebars, and Vite.
+This site is built with Vite, TailwindCSS, and Handlebars partials.
+It is a static site: five HTML pages under `src/`, no framework, no backend.
+
+Guidance for coding agents and a map of the repo is in [AGENTS.md](AGENTS.md).
+
+## Prerequisites
+
+Node.js 22 or newer and npm (Vite 8 needs at least 20.19 or 22.12).
 
 ## How to run locally
 
@@ -16,13 +23,13 @@ Install dependencies:
 npm install
 ```
 
-Run server for local development:
+Run the dev server on http://localhost:8000:
 
 ```shell
 npm start
 ```
 
-Build assets:
+Build the production assets into `dist/`:
 
 ```shell
 npm run build
@@ -30,15 +37,7 @@ npm run build
 
 ## Deploy
 
-The site is deployed to Cloudflare pages.
+The site is deployed to Cloudflare Pages.
 
-Just commit and push changes. This will trigger the Cloudflare build pipeline.
-
-## Initial setup
-
-This repo has been set up by these commands:
-
-    npm install -D tailwindcss postcss autoprefixer vite vite-plugin-handlebars rimraf
-    mkdir {src,src/js,src/css}
-    touch src/index.html src/js/main.js src/css/main.scss vite.config.js
-    npx tailwindcss init -p
+Pushing to `main` triggers the Cloudflare build pipeline, which runs `npm run build`
+and publishes `dist/`. There is no GitHub Actions workflow.
